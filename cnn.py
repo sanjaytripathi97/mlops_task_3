@@ -110,6 +110,8 @@ history = model.fit(
 accuracy = history.history['accuracy'][1]
 #os.system("echo $accuracy > accuracy.txt")
 
+accuracy = int(accuracy*100)
+
 with open("accuracy.txt" , "w+") as fle:
     fle.write(str(accuracy))
 
