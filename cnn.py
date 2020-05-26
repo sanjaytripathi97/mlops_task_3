@@ -112,7 +112,7 @@ accuracy = history.history['accuracy'][1]
 
 accuracy = int(accuracy*100)
 
-with open("accuracy.txt" , "w+") as fle:
+with open("/root/task3/accuracy.txt" , "w+") as fle:
     fle.write(str(accuracy))
 
 print("\nFinal Accuracy:-" , accuracy)
